@@ -1,0 +1,10 @@
+mkdir -p checkpoint/VGG/baseline
+
+CUDA_VISIBLE_DEVICES=2 python3 main2.py --arch VGG --save checkpoint/VGG/baseline --num_classes 50 --epochs 1
+
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abhishekpatil4/pff224.git
+git push -u origin main
